@@ -1,13 +1,13 @@
 #Import modules:
-import process
+import prompt
 import encode
 import decode
 
 #Prompt the user to encode or decode:
-process.process()
+prompt.prompt()
 
 #Based on previous input, launch encode or decode function:
-if process.process == 'e':
+if prompt.prompt == 'e':
     encode.encode()
-elif process.process == 'd':
+elif prompt.prompt == 'd':
     decode.decode()
